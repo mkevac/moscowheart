@@ -3,8 +3,7 @@ import urllib.request
 import os
 import time
 
-URL = 'https://stream.exdesign.ru/serdcestolicy-1/index.m3u8?token=20aafb38f4a7c951318d9c6d1c0252d14831e983' \
-      '-bfcb8475f524ad703f30f7900c531eed-1586113943-1586103143'
+URL = 'https://stream.exdesign.ru/serdcestolicy-1/index.m3u8?token=ee8d8f8029152285366c30abd7874b151dac9d87-3492a6bb71f678f1cd29652b9607214d-1586127742-1586116942'
 BASEURL = URL[0:URL.rindex('/')]
 
 
