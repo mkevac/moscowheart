@@ -15,7 +15,7 @@ def main():
         m3u8_obj = m3u8.load(playlist.absolute_uri)
         lastfileURL = BASEURL+'/tracks-v1/'+m3u8_obj.files[-1]
         localFile, _ = urllib.request.urlretrieve(lastfileURL)
-        os.system("ffmpeg -i {} -r 1 -f singlejpeg {}".format(localFile, 'data/'+time.strftime("%F-%T")+'.jpg'))
+        os.system("ffmpeg -i {} -r 1 -f singlejpeg {}".format(localFile, 'data/'+time.strftime("%F-%H-%M-%S")+'.jpg'))
         time.sleep(60)
 
 
